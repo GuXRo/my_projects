@@ -19,7 +19,7 @@ def lees_inhoud(input_file):
                 seq = seq.replace("^", "")
                 list[0].append(enzym)
                 list[1].append(seq)
-        #print(list)
+                
         return list
 
 def match(list):
@@ -45,13 +45,9 @@ def position(sequentie, list):
     '''
     for i in list[1]:
         if i in sequentie:
-            #print(i)
             c = i
             positie = sequentie.find(c)
-            #for pos, char in enumerate(sequentie):
-                #if char == c:
-                    #lst.append(pos)
-            #print(lst)
+            
     return positie
 
 
